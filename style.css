@@ -1,0 +1,318 @@
+
+/*
+Theme Name: Bachelorarbeit Katja Bleibler
+Author: Katja Bleibler
+Author URI: https://www.katjableibler.ch
+Description: Bachelorarbeit Katja Bleibler
+Version: 1.0
+*/      
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Urbanist&display=swap');
+
+
+/* --- Grundlagen */
+* {
+    margin: 0 0;
+    box-sizing: border-box;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+}
+
+body {
+    width: 100%;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+/* --- Header */
+header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+header h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+header p,
+header nav {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(0deg, #3a3a3a 0%, #555936 100%) ;
+    color: white;
+    padding-top: 40px;
+    width: 100%;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    opacity: 0.5;
+}
+
+header nav {
+    margin-top: 40px;
+    background-color: #3a3a3a;
+    padding: 40px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+header nav li {
+    display: inline;
+}
+
+header nav li:not(:last-of-type)::after {
+    content: " | ";
+}
+
+/* --- Main */
+main {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    min-height: 60vh;
+    color: #3a3a3a;
+}
+
+main h1{
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+main h2 {
+    font-size: 2.5rem;
+    padding-top: 20px;
+    font-family: 'Urbanist', sans-serif;
+}
+
+main h4 {
+    color: #555936;
+}
+
+main p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 140%;
+    margin: 15px 0;
+}
+main a {
+  font-size: 1.2rem;
+  line-height: 140%;
+  color: #D97B73;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main a:hover {
+  text-decoration: none;
+}
+
+
+main article:not(.article_sidebar) {
+    background-color: #f8f8f8; /* Hintergrundfarbe für jedes Kästchen */
+    padding: 20px; /* Padding zwischen den Kästchen erhöhen */
+    margin-bottom: 20px; /* Platz zwischen den Kästchen erhöhen */
+    border-radius: 5px; /* Abrundung der Kanten für ein besseres Aussehen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten für Tiefeneffekt */
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content {
+    width: 60%; /* Adjust the width of the main content */
+}
+
+/* --- Sidebar */
+.sidebar {
+    width: 35%;
+    height: 100%; /* Set sidebar height to 100% of its parent container */
+    background-color: #3a3a3a; /* Example background color for the sidebar */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.article_sidebar {
+    background-color: #3a3a3a; /* Example background color for the sidebar */
+}
+
+/* --- Buttons */
+
+
+
+/* --- Maincontent */
+.main-content article {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+/* --- Footer */
+
+footer p,
+footer {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #3a3a3a;
+    color: white;
+    font-family: 'Urbanist', sans-serif;
+    text-decoration: none;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    opacity: 0.5;
+}
+
+/*footer a:hover {
+    opacity: 0.5;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer nav li {
+    display: inline-block;
+    margin-right: 10px; 
+}
+
+*/
+
+footer nav li:not(:last-of-type)::after {
+    content: " | ";
+    margin-left: 10px; 
+}
+
+.footer-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        list-style-type: none;
+} 
+.footer-menu li:not(:last-child):after {
+    content: "|";
+    margin: 5px; /* Adjust the spacing between menu items and the vertical bar */
+    color: white; /* Set the color of the vertical bar */
+}
+
+/* --- responsive layout ---*/
+/* Add the following styles at the end of your existing CSS */
+
+/* --- Responsive Styles */
+@media screen and (max-width: 640px) {
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    }
+.sidebar{
+    width: 95%;
+    }
+.main-content {
+    width: 95%; /* Adjust the width of the main content */
+    }
+
+main p,
+main h2,
+main a,
+footer p,
+footer a{
+    font-size: 0.8rem;
+}  
+main h1{
+    font-size: 1rem;
+    font-weight: bold;
+
+}  
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+
+    .burger-menu {
+        display: block; /* Show the burger menu on smaller screens */
+        padding: 10px;
+        position: fixed; /* Fixed position to stay on top */
+        top: 0; /* Align to the top of the viewport */
+        left: 0; /* Align to the left of the viewport */
+        z-index: 1000;
+        background-color: #3a3a3a;
+    }
+
+    .burger-menu-container {
+        flex-direction: column; /* Stack items vertically in smaller screens */
+        align-items: flex-start;
+    }
+
+    .burger-line {
+        margin: 5px 0;
+        color: black;
+        height: 3px;
+        background: white;
+        width: 26px;
+        border-radius: 10px;
+    }
+
+    .menu-items {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #3a3a3a;
+        position: absolute;
+        top: 80px; /* Adjust as needed to position the menu below the header */
+        right: 0;
+        width: 100%;
+    }
+
+    .menu-items.show {
+        display: flex;
+    }
+
+    .no-header .burger-menu {
+        display: block; /* Show the burger menu when there is no header */
+    }
+
+    
+}
