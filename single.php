@@ -15,5 +15,8 @@
       <?php endwhile; endif; ?>
        
    </div><!-- main -->
+
+   <button id="scrollToTopBtn"></button>
+
  
 <?php get_footer(); ?>

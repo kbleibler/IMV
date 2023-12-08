@@ -36,4 +36,6 @@
     </div>
 </section>
 
+<button id="scrollToTopBtn"></button>
+
 <?php get_footer(); ?>

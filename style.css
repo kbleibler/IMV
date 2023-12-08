@@ -16,6 +16,7 @@ Version: 1.0
     box-sizing: border-box;
     letter-spacing: 0.5px;
     line-height: 1.4;
+
 }
 
 body {
@@ -114,6 +115,10 @@ main p {
     line-height: 140%;
     margin: 15px 0;
 }
+main ul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+}
 main a {
   font-size: 1.2rem;
   line-height: 140%;
@@ -136,14 +141,21 @@ main article:not(.article_sidebar) {
 
 .content-section {
     display: flex;
-    justify-content: space-between;
 }
 
 .main-content {
     width: 60%; /* Adjust the width of the main content */
 }
 
-/* --- Sidebar */
+.main-content article {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Sidebars */
 .sidebar {
     width: 35%;
     height: 100%; /* Set sidebar height to 100% of its parent container */
@@ -154,27 +166,51 @@ main article:not(.article_sidebar) {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
 .article_sidebar {
     background-color: #3a3a3a; /* Example background color for the sidebar */
 }
 
-/* --- Buttons */
-
-
-
-/* --- Maincontent */
-.main-content article {
-    background-color: #f8f8f8;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.post-list{
+    margin-top: 40px;
 }
 
+ul.post-list{
+    list-style: none;
+}
 
+/* --- Tagebuch und Wissenschaft */
 
+article.science-post {
+    margin: 40px;
+}
+article.tagebuch-post {
+    margin: 40px;
+}
+
+/* --- Button to top */
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background-color: #3a3a3a;
+    color: #ffffff;
+    border: none;
+    border-radius: 10%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#scrollToTopBtn::before {
+    content: '\2191'; /* Unicode character for an upward arrow */
+    font-weight: bold; /* Make the arrow bold */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #555936;
+}
 
 
 
@@ -198,21 +234,6 @@ footer a:hover{
     opacity: 0.5;
 }
 
-/*footer a:hover {
-    opacity: 0.5;
-}
-
-footer nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-footer nav li {
-    display: inline-block;
-    margin-right: 10px; 
-}
-
-*/
 
 footer nav li:not(:last-of-type)::after {
     content: " | ";
@@ -231,8 +252,7 @@ footer nav li:not(:last-of-type)::after {
     color: white; /* Set the color of the vertical bar */
 }
 
-/* --- responsive layout ---*/
-/* Add the following styles at the end of your existing CSS */
+
 
 /* --- Responsive Styles */
 @media screen and (max-width: 640px) {
@@ -261,6 +281,11 @@ main h1{
     font-weight: bold;
 
 }  
+
+#sidebar-trainingstagebuch {
+    display: none; /* Hide the sidebar */
+}
+
 }
 
 
@@ -314,5 +339,8 @@ main h1{
         display: block; /* Show the burger menu when there is no header */
     }
 
-    
+    #sidebar-trainingstagebuch {
+        display: none; /* Hide the sidebar */
+    }
+
 }

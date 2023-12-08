@@ -24,7 +24,7 @@
         
     </p>
     <nav class="menu-items">
-        <?php wp_nav_menu(array('theme_location' => 'hauptnavigation')); ?>
+        <?php wp_nav_menu(array('theme_location' => 'main_menu')); ?>
     </nav>
     <div class="burger-menu">
         <div class="burger-line"></div>

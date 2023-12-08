@@ -8,5 +8,6 @@
         <p>Es können keine Posts geladen werden.</p>
     <?php endif; ?>
     </article>
+    <button id="scrollToTopBtn"></button>
 
 <?php get_footer(); ?>
