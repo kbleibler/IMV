@@ -343,4 +343,8 @@ main h1{
         display: none; /* Hide the sidebar */
     }
 
+    #sidebar-science {
+        display: none; /* Hide the sidebar */
+    }
+
 }
