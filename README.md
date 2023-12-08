@@ -14,6 +14,11 @@ Dank einer Navigation auf der Seite, kann man auf den Unterseiten "Trainingstage
 
 Der gesamte Code ist responsiv, so dass man mein Trainingsalltag sowohl auf dem Computer, wie auch auf dem Handy in einem ansprechenden Layout geniessen kann. 
 
+## Probleme
+Last but not least – die Probleme, die ich während dem Programmieren hatte. Denn von denen gab es zu Hauf. Neben etlichen Tagen an denen ich eigentlich an der Webseite arbeiten wollte, aber der FHGR-Server nicht funktionierte, habe ich mich zu Beginn mit einer HTML-Seite abgemüht. Durch den Input von Samuel habe ich aber dann relativ schnell auf ein Wordpress-Theme umgestellt, das mir aber einige Mühen bereitete. Zum einen habe ich nicht alle Funktionen auf Anhieb gefunden bzw. hatte ich teilweise Probleme, die Hilfestellungen des Internets auf meine Webseite zu integrieren, da einige Funktionen im Backend meinen Code übersteuerten. Ausserdem mag es wohl an meinen mangelhaften Google-Fähigkeiten liegen, aber ich habe im Internet wenige bzw. nicht sehr hilfreiche Informationen zur Erstellung eines Wordpress-Themes gefunden. Entsprechend habe ich viel Zeit gebraucht, um vermutlich einfach Probleme, wie das Burger-Menu zu erstellen. Auch dass jeder Artikel eine ID erhält und somit die Navigation auf den Seiten "Trainingstagebuch" und "Wissenschaft" funktioniert hat mich einige Nerven gekostet. Die Navigation hät nämlich zu beginn einfach auf sich selbst referiert und nicht dem Artikel eine ID versehen.
+
+Es ist nicht die schönste Seite, aber ich hatte doch irgendwann auch etwas Spass beim Erstellen und bin stolz auf die Funktionalitäten, die ich integrieren konnte. Damit habe ich mich selber etwas überrascht. 
+
 # Quellen
 Für die Umsetzung meines Projekts habe ich hauptsächlich meinen Freund und Helfer Chat GPT zu Rate gezogen. Zusätzlich habe ich aber noch folged Seiten konsultiert:
 
@@ -24,3 +29,4 @@ https://developer.wordpress.org
 Vergessen darf man hier aber auch folgende Personen nicht:
 
 Nina Grässli und Samuel Rhyner für ihre seelische und codesichere Unterstützung bei diesem Projekt.
+
